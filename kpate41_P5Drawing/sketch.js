@@ -5,6 +5,7 @@ function setup() {
   pg1 = createGraphics(800, 400);
   pg2 = createGraphics(800, 800);
   pg3 = createGraphics(800, 400);
+  pg4 = createGraphics(800, 800);
 }
 
 function draw() {
@@ -51,7 +52,30 @@ function draw() {
 
   stroke(255);
   strokeWeight(15);
-  fill(0,0, 255, 230);
+  fill(0, 0, 255, 230);
   circle(525, 1370, 70);
   circle(675, 1370, 70);
+
+  pg4.colorMode(HSB);               //Example #4
+  pg4.background(230, 255, 50);
+  image(pg4, 0, 1600);
+
+  stroke(255);                            //Green circle parameters
+  strokeWeight(5);
+  fill(0, 125, 0, 230);
+  circle(400, 2000, 400);
+
+  fill(255, 0, 0, 230);                   //Red star shape parameters
+  beginShape();                           //Vertex list starts from the top point of the star, going clockwise.
+  vertex(400, 1800);
+  vertex(450, 1950);
+  vertex(595, 1950);
+  vertex(475, 2025);
+  vertex(520, 2165);
+  vertex(400, 2100);
+  vertex(280, 2165);
+  vertex(325, 2025);
+  vertex(205, 1950);
+  vertex(350, 1950);
+  endShape(CLOSE);
 }
