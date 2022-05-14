@@ -23,25 +23,26 @@ There are 3 LEDs to show what the current charge level is, no lights is Zero, 1 
 Project Drawing
 ![JavaScript projects](img/Integration_Project_Diagram_Drawing.png)
 
- 
+--------------------------------------
 
 Graphical Component: 3 Scenes
+
 	Scene 1: Main Menu
-	Game Title
-	Start Button
+		Game Title
+		Start Button
 ![JavaScript projects](img/Start_Scene.jpg)
 
 --------------------------------------
+Scene 2: Game Play
 
-	Scene 2: Game Play
 	Player is the circle of dynamic light (ray gun), moving to reveal & attack the enemy.
 	Enemy is hidden in the space of the canvas. (Has 3 lives & gains an extra life for each Charge Crystal destroyed.)
 	3 Charge Crystals (Player Health) that move around the map, and the player must protect them from the enemy before they get destroyed. 
 ![JavaScript projects](img/Game_Loop.png)
 
 --------------------------------------
+Scene 3: Game Over
 
-	Scene 3: Game Over
 	“You Lose” or ”You Win” title
 	Main Menu Button
 ![JavaScript projects](img/You_Lose_Scene.jpg)
