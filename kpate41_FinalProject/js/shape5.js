@@ -5,16 +5,20 @@ class Circle {
     this.size = 10;
     this.color = 'darkgray';
     this.spin = 0;
+    //this.fillParam = fill(this.color);
+    //this.strokeParam = noStroke();
   }
 
   //draw the circle to the canvas
   show() {
-    noStroke()
+    //this.strokeParam;
+    noStroke();
     angleMode(DEGREES);
     push();
     translate(this.x, this.y);
     rotate(this.spin);
-    fill(this.color)
+    //this.fillParam;
+    fill(this.color);
     ellipse(0, 0, this.size*2);
     pop();
   }
